@@ -30,6 +30,6 @@ export interface TableProps {
   lastItemRef?: (node: HTMLTableRowElement) => void;
 }
 
-export type PageProps = {
+export type RepoPageProps = {
   params: Promise<{ owner: string; repo: string }>;
 };
