@@ -2,9 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { StatCard, BackButton } from "@/components";
 import { getRepository } from "./actions";
-import { RepoPageProps } from "@/interfaces";
+import { PageProps } from "@/interfaces";
 
-export default async function RepositoryDetailPage({ params }: RepoPageProps) {
+export default async function RepositoryDetailPage({ params }: PageProps) {
   const { owner, repo } = await params;
   const repository = await getRepository(owner, repo);
 
