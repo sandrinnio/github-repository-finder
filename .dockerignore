@@ -1,0 +1,18 @@
+# See https://help.docker.com/engine/reference/builder/#dockerignore-file
+
+# node
+node_modules
+npm-debug.log
+
+# mac
+.DS_Store
+
+# git
+.git
+.gitignore
+
+# vercel
+.vercel
+
+# next
+.next/cache 
